@@ -64,43 +64,43 @@
 > Setting up git
 
 * Tải và cài đặt git
- * `sudo apt-get install git-core`
+    * `sudo apt-get install git-core`
 
 * Set tên và email trong git
- * ` git config --global user.name "KaitoRyouga"`
- * `git config --global user.email "kaito1477800@gmail.com"`
+    * ` git config --global user.name "KaitoRyouga"`
+    * `git config --global user.email "kaito1477800@gmail.com"`
 
 ---
 > Generate and add SSH key
 
 * Mở terminal và gõ câu lệnh
- * `ssh-keygen -t rsa -b 4096 -C "kaito1477800@gmail.com"`
- * `Enter file in which to save the key (/home/kaito/.ssh/id_rsa):` 
-     * nhấn enter để cài đặt ở mặc định
+    * `ssh-keygen -t rsa -b 4096 -C "kaito1477800@gmail.com"`
+    * `Enter file in which to save the key (/home/kaito/.ssh/id_rsa):` 
+        * nhấn enter để cài đặt ở mặc định
 
- * `Enter passphrase (empty for no passphrase):`
-     * Nhập password cho key
+    * `Enter passphrase (empty for no passphrase):`
+        * Nhập password cho key
 
- * `Enter same passphrase again:`
-     * Nhập lại password
+    * `Enter same passphrase again:`
+        * Nhập lại password
 
- * `eval “$(ssh-agent -s)”`
-     * Kích hoạt ssh-agent
+    * `eval “$(ssh-agent -s)”`
+        * Kích hoạt ssh-agent
 
- * `ssh–add ~/.ssh/id_rsa`
-     * Add ssh key vào ssh-agent
+    * `ssh–add ~/.ssh/id_rsa`
+        * Add ssh key vào ssh-agent
 
- * `sudo apt-get install xclip`
-     * cài xclip
- * `xclip -sel clip < ~/.ssh/id_rsa.pub`
-     * Nội dung của id_rsa.pub sẽ lưu vào clipboard
+    * `sudo apt-get install xclip`
+        * cài xclip
+    * `xclip -sel clip < ~/.ssh/id_rsa.pub`
+        * Nội dung của id_rsa.pub sẽ lưu vào clipboard
 
- * Vào github, vào setting, vào SSH and GPG keys, click vào new ssh key và paste
+* Vào github, vào setting, vào SSH and GPG keys, click vào new ssh key và paste
 
 ---
 > Caching your GitHub password in Git
 > - Dùng để cache username và password trong một khoảng thời gian nhất định.
 
- * `git config --global credential.helper cache`
- * `git config --global credential.helper 'cache --timeout=3600'`
-     * set lại timeout nếu cần
+    * `git config --global credential.helper cache`
+    * `git config --global credential.helper 'cache --timeout=3600'`
+        * set lại timeout nếu cần
