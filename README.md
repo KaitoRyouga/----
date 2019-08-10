@@ -101,6 +101,6 @@
 > Caching your GitHub password in Git
 > - Dùng để cache username và password trong một khoảng thời gian nhất định.
 
-    * `git config --global credential.helper cache`
-    * `git config --global credential.helper 'cache --timeout=3600'`
-        * set lại timeout nếu cần
+* `git config --global credential.helper cache`
+* `git config --global credential.helper 'cache --timeout=3600'`
+   * set lại timeout nếu cần
